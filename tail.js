@@ -6,10 +6,9 @@ const assertEqual = function(actual, expected) {
 };
 // Objective - return new array which removes first element and does not impact first array
 
-// Create new array and pass first array in while removing the first index value
-let newArray = [];
+// pass original array in while removing the first index value and not modifying the original
 const tail = function(array) {
-  newArray = array.slice(1);
+  return array.slice(1);
 };
 
 // Test Code
