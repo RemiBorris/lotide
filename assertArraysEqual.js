@@ -1,8 +1,10 @@
 // Function to compare 2 arrays and console log
 const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1,arr2) === true) {
+  if (eqArrays(arr1,arr2)) {
     console.log(`✅✅✅  Assertion Passed: ${arr1} === ${arr2}`);
-  } else console.log(`🛑🛑🛑  Assertion Failed: ${arr1} !== ${arr2}`);
+  } else {
+    console.log(`🛑🛑🛑  Assertion Failed: ${arr1} !== ${arr2}`);
+  }
 };
 
 // Function to compare 2 arrays
