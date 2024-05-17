@@ -4,7 +4,7 @@ const assertArraysEqual = function(arr1, arr2) {
     console.log(`🛑🛑🛑  Assertion Failed: ${arr1} !== ${arr2}`);
     return;
   }
-  for (const i in arr1) {
+  for (let i in arr1) {
     if (arr1[i] !== arr2[i]) {
       console.log(`🛑🛑🛑  Assertion Failed: ${arr1} !== ${arr2}`);
       return;
