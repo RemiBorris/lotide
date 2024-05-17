@@ -1,15 +1,20 @@
-// Function to compare 2 arrays
+// Function to compare 2 arrays and console log
 const assertArraysEqual = function(arr1, arr2) {
+  if (eqArrays(arr1,arr2) === true) {
+    console.log(`✅✅✅  Assertion Passed: ${arr1} === ${arr2}`);
+  } else console.log(`🛑🛑🛑  Assertion Failed: ${arr1} !== ${arr2}`);
+};
+
+// Function to compare 2 arrays
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
-    console.log(`🛑🛑🛑  Assertion Failed: ${arr1} !== ${arr2}`);
-    return;
+    return false;
   }
   for (let i in arr1) {
     if (arr1[i] !== arr2[i]) {
-      console.log(`🛑🛑🛑  Assertion Failed: ${arr1} !== ${arr2}`);
-      return;
+      return false;
     }
-  } console.log(`✅✅✅  Assertion Passed: ${arr1} === ${arr2}`);
+  } return true;
 };
 
 // Test Case for different length string
