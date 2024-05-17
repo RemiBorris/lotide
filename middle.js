@@ -31,7 +31,7 @@ const middle = function(array) {
     middleArray.push(array[center - 1]);
     middleArray.push(array[center]);
   } else {
-    middleArray.push(array[center - 0.5]);
+    middleArray.push(array[Math.floor(center)]);
   }
   return middleArray;
 };
