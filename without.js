@@ -23,7 +23,7 @@ const assertArraysEqual = function(arr1, arr2) {
 const without = function(source, itemsToRemove) {
   let reducedArray = [];
   for (let i of source) {
-    if (itemsToRemove.includes(i) !== true) {
+    if (!itemsToRemove.includes(i)) {
       reducedArray.push(i);
     }
   } return reducedArray;
