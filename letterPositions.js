@@ -19,7 +19,7 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-const letterPositions = function (sentence) {
+const letterPositions = function(sentence) {
   const results = {};
   for (let index = 0; index < sentence.length; index ++) {
     if (sentence[index] !== " ") {
