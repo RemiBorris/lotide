@@ -26,8 +26,7 @@ const letterPositions = function (sentence) {
       if (results.hasOwnProperty(sentence[index])) {
         results[sentence[index]].push(index);
       } else {
-        results[sentence[index]] = [];
-        results[sentence[index]].push(index);
+        results[sentence[index]] = [index];
       }
     }
   }
