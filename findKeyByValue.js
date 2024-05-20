@@ -12,7 +12,7 @@ const findKeyByValue = function(givenObject, findKey) {
     if (givenObject[givenKey] === findKey) {
       return givenKey;
     }
-  } return undefined;
+  }
 };
 
 //Test Code
