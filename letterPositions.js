@@ -1,23 +1,4 @@
-// Function to compare 2 arrays
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i in arr1) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  } return true;
-};
-
-// Function to compare 2 arrays and console log
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1,arr2)) {
-    console.log(`✅✅✅  Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🛑🛑🛑  Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
+const assertArraysEqual = require("./assertArraysEqual");
 
 const letterPositions = function(sentence) {
   const results = {};
@@ -32,6 +13,9 @@ const letterPositions = function(sentence) {
   }
   return results;
 };
+
+module.exports = letterPositions;
+
 //Test
 const result1 = letterPositions(("lighthouse in the house"));
 const result2 = letterPositions(("this is a test"));

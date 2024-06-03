@@ -1,23 +1,4 @@
-// Function to compare 2 arrays
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i in arr1) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  } return true;
-};
-
-// Function to compare 2 arrays and console log
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1,arr2)) {
-    console.log(`✅✅✅  Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🛑🛑🛑  Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
+const assertArraysEqual = require("./assertArraysEqual");
 
 // Function to remove instances from an array
 const without = function(source, itemsToRemove) {
@@ -28,6 +9,8 @@ const without = function(source, itemsToRemove) {
     }
   } return reducedArray;
 };
+
+module.exports = without;
 
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
