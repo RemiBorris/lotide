@@ -8,7 +8,7 @@ const eqObjects = require("./eqObjects");
 const assertObjectsEqual = require("./assertObjectsEqual");
 const countLetters = require("./countLetters");
 const countOnly = require("./countOnly");
-const findkey = require("./findKey");
+const findKey = require("./findKey");
 const findKeyByValue = require("./findKeyByValue");
 const letterPositions = require("./letterPositions");
 const takeUntil = require("./takeUntil");
@@ -26,7 +26,7 @@ module.exports = {
   assertObjectsEqual: assertObjectsEqual,
   countLetters: countLetters,
   countOnly: countOnly,
-  findkey: findkey,
+  findKey: findKey,
   findKeyByValue: findKeyByValue,
   letterPositions: letterPositions,
   takeUntil: takeUntil,
