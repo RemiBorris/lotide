@@ -8,27 +8,8 @@ const map = function(array, callback) {
   return results;
 };
 
-//test functions below
-// Function to compare 2 arrays
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i in arr1) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  } return true;
-};
-
-// Function to compare 2 arrays and console log
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1,arr2)) {
-    console.log(`✅✅✅  Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🛑🛑🛑  Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
+module.exports = map;
+const assertArraysEqual = require("./assertArraysEqual");
 
 //Test code
 
